@@ -100,7 +100,7 @@ func (shortcodeParser) parseShortcode(line []byte, pos int) (int, int, int, bool
 			if inName {
 				nameEnd = pos
 			}
-			text, pos = text[3:], pos+3
+			pos = pos + 3
 			break
 		}
 
